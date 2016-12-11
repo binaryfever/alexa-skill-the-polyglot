@@ -1,0 +1,9 @@
+AboutIntent who developed this skill
+AboutIntent tell me about the developer
+AboutIntent give me information about the developer
+AboutIntent who is the author
+AboutIntent who created this skill
+
+LanguageIntent tell me something interesting about {Language}
+LanguageIntent what can you tell me about {Language}
+LanguageIntent anything interesting about the {Language} development technology
