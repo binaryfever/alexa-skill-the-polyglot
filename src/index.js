@@ -12,9 +12,9 @@ var handlers = {
 
         var speechOutput = "";
 
-        if(this.event.request.intent.slots.Language.value && this.event.request.intent.Language.value.toLowerCase() == "java"){
+        if(this.event.request.intent.slots.Language.value && this.event.request.intent.slots.Language.value.toLowerCase() == "java"){
             speechOutput = Data.java[getRandomInt(0, 2)];
-        } else if(this.event.intent.slots.Language.value && this.even.request.intent.Language.value.toLowerCase() == "ionic framework"){
+        } else if(this.event.request.intent.slots.Language.value && this.event.request.intent.slots.Language.value.toLowerCase() == "ionic"){
             speechOutput = Data.ionic[getRandomInt(0, 3)];
         } else{
             speechOutput = "I don't have anything interesting to share regarding what you've asked."
@@ -25,7 +25,7 @@ var handlers = {
 
     "AboutIntent": function(){
         var speechOutput = "This is an example based on the developer Nic Raboy by Fred McHale";
-        this.emit(':tellWithCard', speechOuput, skillName, speechOutput);
+        this.emit(':tellWithCard', speechOutput, skillName, speechOutput);
     },
 
     "AMAZON.HelpIntent": function(){

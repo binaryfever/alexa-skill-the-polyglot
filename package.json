@@ -1,0 +1,19 @@
+{
+    "name": "alexa-skill-polyglot",
+    "version": "0.0.1",
+    "description": "An example alexa project",
+    "main": "index.js",
+    "dependencies": {
+        "alexa-sdk": "^1.0.6"            
+    },
+    "devDependencies": {
+        "mocha": "^3.2.0",
+        "chai": "^3.5.0",
+        "aws-lambda-mock-context": "^3.0.1"
+    },
+    "scripts":{
+        "test": "mocha"
+    },
+    "author": "Fred McHale"
+}
+
